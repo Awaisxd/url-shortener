@@ -7,7 +7,6 @@ const handleError = (res, error, context = 'URL operation') => {
   if (error.code === 11000) {
     return res.status(409).json({ error: 'Short URL already exists' });
   }
-  // ... rest of the error handling
 };
 
 // Create short URL (with enhanced duplicate handling)
