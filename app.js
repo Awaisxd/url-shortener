@@ -2,8 +2,8 @@
 require('dotenv').config();
 
 // Debug: Check if .env is loading
-console.log('MONGODB_URI exists?', !!process.env.MONGODB_URI)
-console.log('PORT exists?', !!process.env.PORT)
+console.log('MONGODB_URI exists?', !!process.env.MONGODB_URI);
+console.log('PORT exists?', !!process.env.PORT);
 
 const express = require('express');
 const cors = require('cors');
