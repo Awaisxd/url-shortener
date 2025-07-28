@@ -2,9 +2,9 @@ const Url = require('../models/Url');
 const { isValidUrl } = require('../utils/validators'); // Assume you have this helper
 
 const handleError = (res, error, context = 'URL operation') => {
-  console.error(`${context} failed:`, error.message, error.stack)
+  console.error(`${context} failed:`, error.message, error.stack);
   // Rest of the error handling remains the same
-  if (error.code === 11000) {   console.log()
+  if (error.code === 11000) {
     return res.status(409).json({ error: 'Short URL already exists' });
   }
 };
